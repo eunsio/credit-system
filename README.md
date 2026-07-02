@@ -16,6 +16,32 @@
 
 本项目采用前后端分离架构，后端使用 Spring Cloud 微服务技术栈，前端使用 Vue 3 + Element Plus，实现了一个完整的创新学分管理平台。系统支持学生提交学分申请、教师审核、管理员管理、数据统计分析等功能，并提供了社区交流模块。
 
+## 项目预览
+
+### 登录界面
+![登录界面](preview-images/1.png)
+
+### 管理员仪表盘
+![管理员仪表盘](preview-images/2.png)
+
+### 学分申请管理
+![学分申请管理](preview-images/3.png)
+
+### 申请详情
+![申请详情](preview-images/4.png)
+
+### 个人申请列表
+![个人申请列表](preview-images/5.png)
+
+### 社区交流
+![社区交流](preview-images/6.png)
+
+### 竞赛信息
+![竞赛信息](preview-images/7.png)
+
+### 用户信息管理
+![用户信息管理](preview-images/8.png)
+
 ## 技术栈
 
 ### 后端技术
