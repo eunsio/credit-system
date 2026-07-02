@@ -83,23 +83,23 @@
 ### 管理员仪表盘
 ![管理员仪表盘](preview-images/2.png)
 
-### 学分申请管理
-![学分申请管理](preview-images/3.png)
+### 管理员审批管理
+![管理员审批管理](preview-images/3.png)
 
-### 申请详情
-![申请详情](preview-images/4.png)
+### 个人信息
+![个人信息](preview-images/4.png)
 
-### 个人申请列表
-![个人申请列表](preview-images/5.png)
+### 学生获奖记录
+![学生获奖记录](preview-images/5.png)
 
-### 社区交流
-![社区交流](preview-images/6.png)
+### 学生提交学分申请
+![学生提交学分申请](preview-images/6.png)
 
 ### 竞赛信息
 ![竞赛信息](preview-images/7.png)
 
-### 用户信息管理
-![用户信息管理](preview-images/8.png)
+### 技术社区
+![技术社区](preview-images/8.png)
 
 ## 快速开始
 
