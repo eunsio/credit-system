@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.in12.apply.mapper.StatMapper">
+
+    <select id="countStudents" resultType="java.lang.Long">
+        SELECT COUNT(*) FROM sys_user WHERE role = 'STUDENT'
+    </select>
+
+    <select id="countAppliesByStatus" resultType="java.lang.Long">
+        SELECT COUNT(*) FROM sys_credit_apply WHERE status = #{status}
+    </select>
+
+    <select id="totalApprovedCredits" resultType="java.lang.Long">
+        SELECT IFNULL(SUM(credit_score), 0) FROM sys_credit_apply WHERE status = 1
+    </select>
+
+    <select id="yearStats" resultType="cn.in12.apply.vo.YearItem">
+        SELECT
+            academic_year AS academicYear,
+            COUNT(*) AS applyCount,
+            SUM(CASE WHEN status = 1 THEN 1 ELSE 0 END) AS approvedCount,
+            IFNULL(SUM(CASE WHEN status = 1 THEN credit_score ELSE 0 END), 0) AS totalCredits
+        FROM sys_credit_apply
+        GROUP BY academic_year
+        ORDER BY academic_year DESC
+    </select>
+
+    <select id="topStudents" resultType="cn.in12.apply.vo.TopStudentItem">
+        SELECT
+            a.user_id AS userId,
+            u.nickname AS nickname,
+            SUM(a.credit_score) AS totalCredits
+        FROM sys_credit_apply a
+        LEFT JOIN sys_user u ON a.user_id = u.id
+        WHERE a.status = 1
+        GROUP BY a.user_id, u.nickname
+        ORDER BY totalCredits DESC
+        LIMIT 10
+    </select>
+
+    <select id="gradeStats" resultType="cn.in12.apply.vo.GradeStatItem">
+        SELECT
+            academic_year AS academicYear,
+            COUNT(DISTINCT user_id) AS studentCount,
+            COUNT(*) AS awardCount,
+            IFNULL(SUM(credit_score), 0) AS totalCredits
+        FROM sys_credit_apply
+        WHERE status = 1
+        GROUP BY academic_year
+        ORDER BY academic_year DESC
+    </select>
+
+</mapper>

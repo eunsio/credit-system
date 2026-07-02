@@ -1,0 +1,54 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: credit-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yml
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"
+      discovery:
+        locator:
+          enabled: true # 开启从注册中心动态创建路由的功能
+      httpclient:
+        connect-timeout: 5000
+        response-timeout: 30s
+      routes:
+        - id: credit-auth
+          uri: lb://credit-auth
+          predicates:
+            - Path=/auth/**
+        - id: credit-user
+          uri: lb://credit-user
+          predicates:
+            - Path=/user/**
+        - id: credit-user-uploads
+          uri: lb://credit-user
+          predicates:
+            - Path=/uploads/**
+        - id: credit-competition
+          uri: lb://credit-competition
+          predicates:
+            - Path=/competition/**
+        - id: credit-apply
+          uri: lb://credit-apply
+          predicates:
+            - Path=/apply/**
+        - id: credit-community
+          uri: lb://credit-community
+          predicates:
+            - Path=/community/**
+  config:
+    import:
+      - optional:nacos:credit-gateway.yml?refresh=true
