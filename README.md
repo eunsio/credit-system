@@ -5,8 +5,8 @@
   <img src="https://img.shields.io/badge/Spring%20Boot-3.2.5-brightgreen" alt="Spring Boot" />
   <img src="https://img.shields.io/badge/Spring%20Cloud-2023.0.1-blue" alt="Spring Cloud" />
   <img src="https://img.shields.io/badge/Spring%20Cloud%20Alibaba-2023.0.1.0-blue" alt="Spring Cloud Alibaba" />
-  <img src="https://img.shields.io/badge/MyBatis%20Plus-3.5.5-red" alt="MyBatis Plus" />
-  <img src="https://img.shields.io/badge/Vue-3.2-4fc08d" alt="Vue 3" />
+  <img src="https://img.shields.io/badge/MyBatis%20Plus-3.5.6-red" alt="MyBatis Plus" />
+  <img src="https://img.shields.io/badge/Vue-3.5-4fc08d" alt="Vue 3" />
   <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License" />
 </p>
 
@@ -23,17 +23,21 @@
 - **Spring Cloud 2023.0.1** - 微服务框架
 - **Spring Cloud Alibaba 2023.0.1.0** - 微服务组件
 - **Spring Cloud Gateway** - API 网关
-- **MyBatis Plus 3.5.5** - 数据持久层
-- **MySQL 8.0+** - 数据库
-- **JWT** - 身份认证
-- **Knife4j** - API 文档
+- **MyBatis Plus 3.5.6** - 数据持久层
+- **MySQL 8.0.33** - 数据库
+- **Druid 1.2.20** - 数据库连接池
+- **Knife4j 4.5.0** - API 文档
+- **JWT 0.12.5** - 身份认证
+- **Fastjson 2.0.49** - JSON 处理
 
 ### 前端技术
-- **Vue 3.2** - 前端框架
-- **Element Plus** - UI 组件库
-- **Vite** - 构建工具
-- **Pinia** - 状态管理
-- **Vue Router** - 路由管理
+- **Vue 3.5** - 前端框架
+- **Element Plus 2.8** - UI 组件库
+- **Vite 6.0** - 构建工具
+- **Pinia 2.2** - 状态管理
+- **Vue Router 4.4** - 路由管理
+- **Axios 1.7** - HTTP 客户端
+- **ECharts 6.1** - 数据可视化
 
 ## 项目架构
 
