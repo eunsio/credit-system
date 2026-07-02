@@ -191,7 +191,6 @@ credit-system/
 - `community_post` - 社区帖子表
 - `post_reply` - 帖子回复表
 
-详细设计文档请参考 `图表设计/` 目录下的 ER 图和功能结构图。
 
 ## 开发说明
 
