@@ -1,5 +1,15 @@
 # 创新学分申领管理平台
 
+<p align="center">
+  <img src="https://img.shields.io/badge/JDK-17-orange" alt="JDK 17" />
+  <img src="https://img.shields.io/badge/Spring%20Boot-3.2.5-brightgreen" alt="Spring Boot" />
+  <img src="https://img.shields.io/badge/Spring%20Cloud-2023.0.1-blue" alt="Spring Cloud" />
+  <img src="https://img.shields.io/badge/Spring%20Cloud%20Alibaba-2023.0.1.0-blue" alt="Spring Cloud Alibaba" />
+  <img src="https://img.shields.io/badge/MyBatis%20Plus-3.5.5-red" alt="MyBatis Plus" />
+  <img src="https://img.shields.io/badge/Vue-3.2-4fc08d" alt="Vue 3" />
+  <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License" />
+</p>
+
 基于 Spring Cloud 微服务架构的创新学分申领管理系统，提供完整的学分申请、审核、统计和管理功能。
 
 ## 项目简介
@@ -9,16 +19,17 @@
 ## 技术栈
 
 ### 后端技术
-- **Spring Cloud** - 微服务框架
-- **Spring Boot** - 服务开发框架
+- **Spring Boot 3.2.5** - 服务开发框架
+- **Spring Cloud 2023.0.1** - 微服务框架
+- **Spring Cloud Alibaba 2023.0.1.0** - 微服务组件
 - **Spring Cloud Gateway** - API 网关
-- **MyBatis** - 数据持久层
-- **MySQL** - 数据库
+- **MyBatis Plus 3.5.5** - 数据持久层
+- **MySQL 8.0+** - 数据库
 - **JWT** - 身份认证
 - **Knife4j** - API 文档
 
 ### 前端技术
-- **Vue 3** - 前端框架
+- **Vue 3.2** - 前端框架
 - **Element Plus** - UI 组件库
 - **Vite** - 构建工具
 - **Pinia** - 状态管理
@@ -62,7 +73,7 @@
 ## 快速开始
 
 ### 环境要求
-- JDK 8+
+- JDK 17
 - Maven 3.6+
 - MySQL 8.0+
 - Node.js 16+
@@ -172,4 +183,4 @@ credit-system/
 
 ## 许可证
 
-本项目仅用于学习和课程设计目的。
+本项目采用 MIT 许可证，详见 [LICENSE](LICENSE) 文件。
