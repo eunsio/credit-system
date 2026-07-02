@@ -1,4 +1,4 @@
-<p align="center">创新学分申领管理平台</p>
+<h1 align="center">创新学分申领管理平台</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/JDK-17-orange" alt="JDK 17" />
