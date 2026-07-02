@@ -24,10 +24,14 @@ hs_err_pid*
 .settings/
 .classpath
 .project
+*.swp
+*.swo
+*~
 
 # OS
 .DS_Store
 Thumbs.db
+Desktop.ini
 
 # Node.js / Frontend
 node_modules/
@@ -37,15 +41,25 @@ yarn-error.log*
 dist/
 dist-ssr/
 *.local
+package-lock.json
 
 # Environment
 .env
 .env.local
 .env.*.local
 
-# Uploads (if needed)
+# Uploads
 uploads/
 
 # Logs
 logs/
 *.log
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Build outputs
+build/
+out/
